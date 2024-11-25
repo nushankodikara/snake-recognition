@@ -1,0 +1,136 @@
+class_id,binomial,genus,family,snake_sub_family,poisonous,primary_continent,primary_country,train_samples,test_samples,total_samples
+18,Agkistrodon contortrix,Agkistrodon,Viperidae,Agkistrodon contortrix,1,North America,United States of America,180,27,207
+20,Agkistrodon piscivorus,Agkistrodon,Viperidae,Agkistrodon piscivorus,1,North America,United States of America,200,15,215
+25,Ahaetulla nasuta,Ahaetulla,Colubridae,Ahaetulla nasuta,0,Asia,India,199,29,228
+26,Ahaetulla prasina,Ahaetulla,Colubridae,Ahaetulla prasina,0,Asia,Indonesia,200,25,225
+39,Arizona elegans,Arizona,Colubridae,Arizona elegans,0,North America,United States of America,181,22,203
+41,Aspidites melanocephalus,Aspidites,Pythonidae,Aspidites melanocephalus,0,Australia,Australia,154,21,175
+48,Atractus crassicaudatus,Atractus,Colubridae,Atractus crassicaudatus,0,South America,Colombia,187,27,214
+52,Austrelaps superbus,Austrelaps,Elapidae,Austrelaps superbus,1,Australia,Australia,201,22,223
+54,Bitis arietans,Bitis,Viperidae,Bitis arietans,1,Africa,South Africa,183,25,208
+57,Bitis gabonica,Bitis,Viperidae,Bitis gabonica,1,North America,United States of America,186,26,212
+60,Boa constrictor,Boa,Boidae,Boa constrictor,0,South America,Brazil,121,13,134
+65,Bogertophis subocularis,Bogertophis,Colubridae,Bogertophis subocularis,0,North America,United States of America,197,26,223
+71,Boiga irregularis,Boiga,Colubridae,Boiga irregularis,1,Australia,Australia,196,24,220
+73,Boiga kraepelini,Boiga,Colubridae,Boiga kraepelini,0,Asia,Taiwan,201,22,223
+83,Bothriechis schlegelii,Bothriechis,Viperidae,Bothriechis schlegelii,1,North America,Costa Rica,208,24,232
+87,Bothrops asper,Bothrops,Viperidae,Bothrops asper,1,North America,Costa Rica,202,23,225
+88,Bothrops atrox,Bothrops,Viperidae,Bothrops atrox,1,South America,Colombia,184,30,214
+99,Bungarus multicinctus,Bungarus,Elapidae,Bungarus multicinctus,1,Asia,Taiwan,168,30,198
+110,Carphophis amoenus,Carphophis,Colubridae,Carphophis amoenus,0,North America,United States of America,175,25,200
+111,Carphophis vermis,Carphophis,Colubridae,Carphophis vermis,0,North America,United States of America,197,26,223
+113,Causus rhombeatus,Causus,Viperidae,Causus rhombeatus,1,Africa,South Africa,193,25,218
+114,Cemophora coccinea,Cemophora,Colubridae,Cemophora coccinea,0,North America,United States of America,188,26,214
+122,Charina bottae,Charina,Boidae,Charina bottae,0,North America,United States of America,190,22,212
+135,Chrysopelea ornata,Chrysopelea,Colubridae,Chrysopelea ornata,0,Asia,Thailand,183,26,209
+140,Clonophis kirtlandii,Clonophis,Colubridae,Clonophis kirtlandii,0,North America,United States of America,175,27,202
+155,Contia tenuis,Contia,Colubridae,Contia tenuis,0,North America,United States of America,193,22,215
+158,Corallus caninus,Corallus,Boidae,Corallus caninus,0,North America,United States of America,190,31,221
+159,Corallus hortulanus,Corallus,Boidae,Corallus hortulanus,0,South America,Peru,186,27,213
+162,Coronella girondica,Coronella,Colubridae,Coronella girondica,0,Europe,Spain,184,24,208
+163,Crotalus adamanteus,Crotalus,Viperidae,Crotalus adamanteus,1,North America,United States of America,173,14,187
+165,Crotalus atrox,Crotalus,Viperidae,Crotalus atrox,1,North America,United States of America,183,20,203
+168,Crotalus cerastes,Crotalus,Viperidae,Crotalus cerastes,1,North America,United States of America,186,18,204
+169,Crotalus cerberus,Crotalus,Viperidae,Crotalus cerberus,1,North America,United States of America,177,25,202
+175,Crotalus lepidus,Crotalus,Viperidae,Crotalus lepidus,1,North America,United States of America,187,26,213
+177,Crotalus molossus,Crotalus,Viperidae,Crotalus molossus,1,North America,United States of America,177,26,203
+180,Crotalus ornatus,Crotalus,Viperidae,Crotalus ornatus,1,North America,United States of America,179,28,207
+185,Crotalus ruber,Crotalus,Viperidae,Crotalus ruber,1,North America,United States of America,176,29,205
+186,Crotalus scutulatus,Crotalus,Viperidae,Crotalus scutulatus,1,North America,United States of America,184,24,208
+188,Crotalus stephensi,Crotalus,Viperidae,Crotalus stephensi,1,North America,United States of America,189,21,210
+189,Crotalus tigris,Crotalus,Viperidae,Crotalus tigris,1,North America,United States of America,198,26,224
+191,Crotalus triseriatus,Crotalus,Viperidae,Crotalus triseriatus,1,North America,Mexico,189,22,211
+193,Crotalus viridis,Crotalus,Viperidae,Crotalus viridis,1,North America,United States of America,178,17,195
+195,Crotaphopeltis hotamboeia,Crotaphopeltis,Colubridae,Crotaphopeltis hotamboeia,0,Africa,South Africa,183,25,208
+203,Daboia russelii,Daboia,Viperidae,Daboia russelii,1,Asia,India,165,20,185
+215,Dendrelaphis pictus,Dendrelaphis,Colubridae,Dendrelaphis pictus,0,Asia,Indonesia,183,28,211
+216,Dendrelaphis punctulatus,Dendrelaphis,Colubridae,Dendrelaphis punctulatus,0,Australia,Australia,184,26,210
+220,Dendroaspis polylepis,Dendroaspis,Elapidae,Dendroaspis polylepis,1,Africa,South Africa,122,16,138
+226,Diadophis punctatus,Diadophis,Colubridae,Diadophis punctatus,0,North America,United States of America,188,22,210
+238,Drymarchon couperi,Drymarchon,Colubridae,Drymarchon couperi,0,North America,United States of America,175,25,200
+255,Elaphe dione,Elaphe,Colubridae,Elaphe dione,0,Asia,South Korea,161,22,183
+263,Epicrates cenchria,Epicrates,Boidae,Epicrates cenchria,0,South America,Ecuador,184,22,206
+280,Eunectes murinus,Eunectes,Boidae,Eunectes murinus,0,South America,Ecuador,146,20,166
+284,Farancia abacura,Farancia,Colubridae,Farancia abacura,0,North America,United States of America,127,21,148
+302,Gonyosoma oxycephalum,Gonyosoma,Colubridae,Gonyosoma oxycephalum,0,Asia,Malaysia,181,27,208
+315,Hemorrhois hippocrepis,Hemorrhois,Colubridae,Hemorrhois hippocrepis,0,Europe,Portugal,154,25,179
+319,Heterodon nasicus,Heterodon,Colubridae,Heterodon nasicus,0,North America,United States of America,167,25,192
+321,Heterodon simus,Heterodon,Colubridae,Heterodon simus,0,North America,United States of America,188,25,213
+323,Hierophis viridiflavus,Hierophis,Colubridae,Hierophis viridiflavus,0,Europe,Italy,158,20,178
+335,Hypsiglena torquata,Hypsiglena,Colubridae,Hypsiglena torquata,0,North America,United States of America,172,18,190
+338,Imantodes cenchoa,Imantodes,Colubridae,Imantodes cenchoa,0,South America,Costa Rica,200,25,225
+345,Lampropeltis alterna,Lampropeltis,Colubridae,Lampropeltis alterna,0,North America,United States of America,190,24,214
+348,Lampropeltis calligaster,Lampropeltis,Colubridae,Lampropeltis calligaster,0,North America,United States of America,170,20,190
+352,Lampropeltis getula,Lampropeltis,Colubridae,Lampropeltis getula,0,North America,United States of America,180,20,200
+360,Lampropeltis pyromelana,Lampropeltis,Colubridae,Lampropeltis pyromelana,0,North America,United States of America,190,25,215
+363,Lampropeltis triangulum,Lampropeltis,Colubridae,Lampropeltis triangulum,0,North America,United States of America,190,21,211
+364,Lampropeltis zonata,Lampropeltis,Colubridae,Lampropeltis zonata,0,North America,United States of America,189,25,214
+368,Laticauda colubrina,Laticauda,Elapidae,Laticauda colubrina,1,Asia,Indonesia,186,23,209
+373,Leptodeira annulata,Leptodeira,Colubridae,Leptodeira annulata,0,South America,Colombia,186,25,211
+381,Leptophis ahaetulla,Leptophis,Colubridae,Leptophis ahaetulla,0,South America,Colombia,173,27,200
+383,Leptophis diplotropis,Leptophis,Colubridae,Leptophis diplotropis,0,North America,Mexico,192,14,206
+384,Leptophis mexicanus,Leptophis,Colubridae,Leptophis mexicanus,0,North America,Mexico,178,23,201
+396,Lycodon capucinus,Lycodon,Colubridae,Lycodon capucinus,0,Asia,Hong Kong S.A.R.,171,21,192
+422,Malpolon monspessulanus,Malpolon,Lamprophiidae,Malpolon monspessulanus,1,Europe,Spain,171,20,191
+424,Masticophis bilineatus,Masticophis,Colubridae,Masticophis bilineatus,0,North America,United States of America,161,23,184
+427,Masticophis lateralis,Masticophis,Colubridae,Masticophis lateralis,0,North America,United States of America,176,22,198
+429,Masticophis schotti,Masticophis,Colubridae,Masticophis schotti,0,North America,United States of America,158,21,179
+430,Masticophis taeniatus,Masticophis,Colubridae,Masticophis taeniatus,0,North America,United States of America,152,20,172
+441,Micrurus fulvius,Micrurus,Elapidae,Micrurus fulvius,1,North America,United States of America,178,24,202
+448,Micrurus tener,Micrurus,Elapidae,Micrurus tener,1,North America,United States of America,161,22,183
+453,Morelia spilota,Morelia,Pythonidae,Morelia spilota,0,Australia,Australia,193,21,214
+454,Morelia viridis,Morelia,Pythonidae,Morelia viridis,0,Europe,Germany,157,30,187
+457,Naja atra,Naja,Elapidae,Naja atra,1,Asia,Taiwan,180,26,206
+462,Naja naja,Naja,Elapidae,Naja naja,1,Asia,India,152,18,170
+464,Naja nivea,Naja,Elapidae,Naja nivea,1,Africa,South Africa,159,20,179
+470,Natrix maura,Natrix,Colubridae,Natrix maura,0,Europe,Spain,192,20,212
+474,Nerodia cyclopion,Nerodia,Colubridae,Nerodia cyclopion,0,North America,United States of America,172,22,194
+477,Nerodia floridana,Nerodia,Colubridae,Nerodia floridana,0,North America,United States of America,156,25,181
+481,Nerodia taxispilota,Nerodia,Colubridae,Nerodia taxispilota,0,North America,United States of America,157,28,185
+485,Ninia sebae,Ninia,Colubridae,Ninia sebae,0,North America,Mexico,188,25,213
+495,Opheodrys aestivus,Opheodrys,Colubridae,Opheodrys aestivus,0,North America,United States of America,172,26,198
+497,Ophiophagus hannah,Ophiophagus,Elapidae,Ophiophagus hannah,1,Asia,Hong Kong S.A.R.,179,27,206
+507,Oxybelis aeneus,Oxybelis,Colubridae,Oxybelis aeneus,0,North America,Mexico,170,27,197
+515,Oxyuranus scutellatus,Oxyuranus,Elapidae,Oxyuranus scutellatus,1,Australia,Australia,178,23,201
+544,Phyllorhynchus decurtatus,Phyllorhynchus,Colubridae,Phyllorhynchus decurtatus,0,North America,United States of America,176,24,200
+545,Pituophis catenifer,Pituophis,Colubridae,Pituophis catenifer,0,North America,United States of America,177,18,195
+546,Pituophis deppei,Pituophis,Colubridae,Pituophis deppei,0,North America,Mexico,183,22,205
+560,Protobothrops mucrosquamatus,Protobothrops,Viperidae,Protobothrops mucrosquamatus,1,Asia,Taiwan,185,25,210
+562,Psammodynastes pulverulentus,Psammodynastes,Lamprophiidae,Psammodynastes pulverulentus,0,Asia,Hong Kong S.A.R.,188,25,213
+575,Pseudaspis cana,Pseudaspis,Lamprophiidae,Pseudaspis cana,0,Africa,South Africa,158,26,184
+576,Pseudechis australis,Pseudechis,Elapidae,Pseudechis australis,1,Australia,Australia,190,20,210
+578,Pseudechis porphyriacus,Pseudechis,Elapidae,Pseudechis porphyriacus,1,Australia,Australia,158,27,185
+590,Pseudonaja textilis,Pseudonaja,Elapidae,Pseudonaja textilis,1,Australia,Australia,177,25,202
+603,Python molurus,Python,Pythonidae,Python molurus,0,Asia,India,168,22,190
+605,Python regius,Python,Pythonidae,Python regius,0,North America,United States of America,169,23,192
+609,Regina septemvittata,Regina,Colubridae,Regina septemvittata,0,North America,United States of America,177,23,200
+616,Rhabdophis subminiatus,Rhabdophis,Colubridae,Rhabdophis subminiatus,1,Asia,Hong Kong S.A.R.,167,26,193
+617,Rhabdophis tigrinus,Rhabdophis,Colubridae,Rhabdophis tigrinus,1,Asia,South Korea,160,21,181
+619,Rhadinaea flavilata,Rhadinaea,Colubridae,Rhadinaea flavilata,0,North America,United States of America,180,20,200
+623,Rhinocheilus lecontei,Rhinocheilus,Colubridae,Rhinocheilus lecontei,0,North America,United States of America,174,26,200
+628,Salvadora grahamiae,Salvadora,Colubridae,Salvadora grahamiae,0,North America,United States of America,165,26,191
+629,Salvadora hexalepis,Salvadora,Colubridae,Salvadora hexalepis,0,North America,United States of America,161,24,185
+634,Senticolis triaspis,Senticolis,Colubridae,Senticolis triaspis,0,North America,Mexico,182,20,202
+651,Sistrurus catenatus,Sistrurus,Viperidae,Sistrurus catenatus,1,North America,Canada,163,23,186
+652,Sistrurus miliarius,Sistrurus,Viperidae,Sistrurus miliarius,1,North America,United States of America,179,28,207
+656,Spilotes pullatus,Spilotes,Colubridae,Spilotes pullatus,0,North America,Mexico,164,28,192
+672,Tantilla coronata,Tantilla,Colubridae,Tantilla coronata,0,North America,United States of America,197,26,223
+674,Tantilla gracilis,Tantilla,Colubridae,Tantilla gracilis,0,North America,United States of America,193,23,216
+675,Tantilla hobartsmithi,Tantilla,Colubridae,Tantilla hobartsmithi,0,North America,United States of America,175,24,199
+678,Tantilla planiceps,Tantilla,Colubridae,Tantilla planiceps,0,North America,United States of America,181,24,205
+686,Thamnophis atratus,Thamnophis,Colubridae,Thamnophis atratus,0,North America,United States of America,175,26,201
+690,Thamnophis couchii,Thamnophis,Colubridae,Thamnophis couchii,0,North America,United States of America,171,20,191
+691,Thamnophis cyrtopsis,Thamnophis,Colubridae,Thamnophis cyrtopsis,0,North America,United States of America,177,20,197
+696,Thamnophis marcianus,Thamnophis,Colubridae,Thamnophis marcianus,0,North America,United States of America,183,8,191
+698,Thamnophis ordinoides,Thamnophis,Colubridae,Thamnophis ordinoides,0,North America,United States of America,171,18,189
+699,Thamnophis proximus,Thamnophis,Colubridae,Thamnophis proximus,0,North America,United States of America,151,14,165
+701,Thamnophis radix,Thamnophis,Colubridae,Thamnophis radix,0,North America,United States of America,159,22,181
+725,Trimeresurus stejnegeri,Trimeresurus,Viperidae,Trimeresurus stejnegeri,1,Asia,Taiwan,162,25,187
+738,Tropidoclonion lineatum,Tropidoclonion,Colubridae,Tropidoclonion lineatum,0,North America,United States of America,173,25,198
+740,Tropidolaemus subannulatus,Tropidolaemus,Viperidae,Tropidolaemus subannulatus,1,Asia,Malaysia,178,25,203
+741,Tropidolaemus wagleri,Tropidolaemus,Viperidae,Tropidolaemus wagleri,1,Asia,Singapore,191,27,218
+746,Vipera ammodytes,Vipera,Viperidae,Vipera ammodytes,1,Europe,Greece,143,21,164
+747,Vipera aspis,Vipera,Viperidae,Vipera aspis,1,Europe,Italy,157,14,171
+751,Vipera seoanei,Vipera,Viperidae,Vipera seoanei,1,Europe,Spain,173,25,198
+755,Virginia valeriae,Virginia,Colubridae,Virginia valeriae,0,North America,United States of America,167,26,193
+758,Xenochrophis piscator,Xenochrophis,Colubridae,Xenochrophis piscator,0,Asia,India,165,25,190
