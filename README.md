@@ -17,8 +17,8 @@ A deep learning-based web application for identifying snake species from images.
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd snake-species-classifier
+git clone https://github.com/nushankodikara/snake-recognition
+cd snake-recognition
 ```
 
 2. Create and activate a virtual environment (optional but recommended):
