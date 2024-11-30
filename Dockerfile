@@ -24,14 +24,21 @@ RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > bazel
     ln -s /usr/bin/bazel-6.1.0 /usr/bin/bazel && \
     rm -rf /var/lib/apt/lists/*
 
-# Verify Bazel version
-RUN bazel --version
-
-# Build TensorFlow
+# Pre-install Python dependencies
 RUN pip install -U pip six numpy wheel setuptools mock future>=0.17.1 && \
     pip install -U keras_applications==1.0.6 --no-deps && \
-    pip install -U keras_preprocessing==1.0.5 --no-deps
+    pip install -U keras_preprocessing==1.0.5 --no-deps && \
+    pip install charset-normalizer requests urllib3 certifi idna
 
+# Create .bazelrc with timeout settings
+RUN echo 'build --repository_cache=/tmp/bazel-cache' >> /etc/bazel.bazelrc && \
+    echo 'fetch --repository_cache=/tmp/bazel-cache' >> /etc/bazel.bazelrc && \
+    echo 'build --experimental_scale_timeouts=2.0' >> /etc/bazel.bazelrc && \
+    echo 'test --experimental_scale_timeouts=2.0' >> /etc/bazel.bazelrc && \
+    echo 'build --http_timeout=600' >> /etc/bazel.bazelrc && \
+    echo 'build --local_ram_resources=HOST_RAM*.8' >> /etc/bazel.bazelrc
+
+# Build TensorFlow
 RUN git clone https://github.com/tensorflow/tensorflow && \
     cd tensorflow && \
     git checkout r2.15 && \
@@ -44,8 +51,17 @@ RUN git clone https://github.com/tensorflow/tensorflow && \
     export TF_ENABLE_XLA=0 && \
     export CC_OPT_FLAGS="-Wno-sign-compare" && \
     export TF_SET_ANDROID_WORKSPACE=0 && \
+    # Create a local .bazelrc
+    echo 'import %workspace%/../../etc/bazel.bazelrc' > .bazelrc && \
     ./configure && \
-    bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-msse4.2 //tensorflow/tools/pip_package:build_pip_package && \
+    bazel --output_user_root=/tmp/bazel-cache build \
+        -c opt \
+        --copt=-mavx \
+        --copt=-mavx2 \
+        --copt=-mfma \
+        --copt=-msse4.2 \
+        --local_ram_resources=HOST_RAM*.8 \
+        //tensorflow/tools/pip_package:build_pip_package && \
     ./bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 
 # Final stage
