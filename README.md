@@ -22,11 +22,16 @@ cd snake-recognition
 ```
 
 2. Create and activate a virtual environment (optional but recommended):
+- On macOS and Linux:
 ```bash
-python3.9 -m venv venv
-source venv/bin/activate
+python3.9 -m venv .venv
+source .venv/bin/activate
 ```
-
+- On Windows:
+```bash
+python39 -m venv .venv
+.venv\Scripts\activate
+```
 
 3. Install dependencies:
 ```bash
@@ -39,28 +44,27 @@ pip install -r requirements.txt
 
 Start the FastAPI server with:
 ```bash
-uvicorn api.main:app --reload
+uvicorn api:app --reload
 ```
 
 The API will be available at `http://localhost:8000`
 
 API Endpoints:
 - `GET /`: Root endpoint with API information
-- `GET /species`: List all snake species in the database
 - `POST /predict`: Upload and classify a snake image
 
 ### Running the Streamlit Application
 
 Start the Streamlit web interface with:
 ```bash
-streamlit run streamlit/app.py
+streamlit run app.py
 ```
 The application will open in your default web browser.
 
 ## Project Structure
 
-- `api/`: FastAPI backend service
-- `streamlit/`: Streamlit frontend application
+- `api.py`: FastAPI backend service
+- `app.py`: Streamlit frontend application
 - `data/`: Data processing scripts and species information
 - `models/`: Trained model files (using Git LFS)
 - `requirements.txt`: Project dependencies
@@ -68,15 +72,16 @@ The application will open in your default web browser.
 ## Technical Details
 
 ### Model Architecture
-- Based on EfficientNetB4
+- Based on ResNet50
 - Trained on a diverse dataset of snake images
-- Supports multiple snake species classification
+- Supports 165 different snake species classification
 - Input image size: 480x480 pixels
 
 ### Data Processing
 - Images are automatically resized and normalized
-- Predictions are mapped to valid class IDs
-- Confidence scores are provided for top predictions
+- RGB images normalized with ImageNet statistics
+- Data augmentation during training (horizontal flip, rotation)
+- Confidence scores provided for top 3 predictions
 
 ## Important Notes
 
@@ -89,10 +94,10 @@ The application will open in your default web browser.
 ## Dependencies
 
 The project requires several Python packages, which are listed in `requirements.txt`. Key dependencies include:
-- TensorFlow and Keras for model inference
+- PyTorch and torchvision for model inference
 - FastAPI for the backend API
 - Streamlit for the web interface
-- OpenCV and Pillow for image processing
+- Pillow for image processing
 - NumPy and Pandas for data handling
 
 ## Contributing

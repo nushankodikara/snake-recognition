@@ -4,20 +4,18 @@ WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    libgl1-mesa-glx \
-    libglib2.0-0 \
-    curl \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Install TensorFlow and other requirements
+# Copy requirements first to leverage Docker cache
 COPY requirements.txt .
-RUN pip install --no-cache-dir tensorflow-cpu==2.15.0 && \
-    grep -v tensorflow requirements.txt > requirements_no_tf.txt && \
-    pip install --no-cache-dir -r requirements_no_tf.txt && \
-    rm requirements_no_tf.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application code
-COPY api /app/api
+# Copy the rest of the application
+COPY . .
+
+# Expose the port
+EXPOSE 8000
 
 # Command to run the application
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
