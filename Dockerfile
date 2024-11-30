@@ -30,13 +30,13 @@ RUN pip install -U pip six numpy wheel setuptools mock future>=0.17.1 && \
     pip install -U keras_preprocessing==1.0.5 --no-deps && \
     pip install charset-normalizer requests urllib3 certifi idna
 
-# Create .bazelrc with timeout settings
+# Create .bazelrc with correct settings
 RUN echo 'build --repository_cache=/tmp/bazel-cache' >> /etc/bazel.bazelrc && \
     echo 'fetch --repository_cache=/tmp/bazel-cache' >> /etc/bazel.bazelrc && \
     echo 'build --experimental_scale_timeouts=2.0' >> /etc/bazel.bazelrc && \
     echo 'test --experimental_scale_timeouts=2.0' >> /etc/bazel.bazelrc && \
-    echo 'build --http_timeout=600' >> /etc/bazel.bazelrc && \
-    echo 'build --local_ram_resources=HOST_RAM*.8' >> /etc/bazel.bazelrc
+    echo 'build --local_ram_resources=HOST_RAM*.8' >> /etc/bazel.bazelrc && \
+    echo 'common --remote_timeout=3600' >> /etc/bazel.bazelrc
 
 # Build TensorFlow
 RUN git clone https://github.com/tensorflow/tensorflow && \
@@ -61,6 +61,7 @@ RUN git clone https://github.com/tensorflow/tensorflow && \
         --copt=-mfma \
         --copt=-msse4.2 \
         --local_ram_resources=HOST_RAM*.8 \
+        --remote_timeout=3600 \
         //tensorflow/tools/pip_package:build_pip_package && \
     ./bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 
